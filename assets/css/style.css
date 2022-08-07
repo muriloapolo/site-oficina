@@ -108,6 +108,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1em;
 }
 
 .title-hero {
@@ -135,12 +136,14 @@ body {
 .sub-title {
     font-size: 4em;
     text-shadow: 5px 7px 10px rgb(16, 20, 5);
+    text-align: center;
 }
 
 .cards-container {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    
     margin-top: 6rem;
     margin-bottom: 3rem;
 }
@@ -170,28 +173,41 @@ body {
 }
 
 .lista-servicos {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(67, 155, 238, 0.24);
+    background-color: rgba(152, 155, 158, 0.747);
+    margin-top: 30px;
+
+    /* align-items: center; */
+
 
 }
 
 .lista-servicos-principal {
+    text-align: center;
     list-style-image: url('../imagens/wrench-solid.svg');
-    display: block;
-    font-size: 2.3em;
+    display: flex;   
+    justify-content: space-around; 
+    flex-direction: column;    
+    font-size: 2.2em;
     margin-top: 5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     list-style-position: inside;
     text-shadow: 5px 7px 10px rgb(16, 20, 5);
-
+    width: 100%;
+    text-align: left;   
+}
+.lista-servicos-principal li{
+    margin-left: 30px;
+    white-space: nowrap;
 }
 
 #localizacao {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5rem;
   
 }
 
@@ -216,7 +232,7 @@ body {
     background-color: var(--cor-botao-whats);
     color: var(--texto-principal);
     color: rgb(77, 57, 7);
-    padding: 20px 40px;
+    padding: 15px 30px;
     font-size: 2em;
     text-align: center;
     border-radius: 15px 50px;
@@ -345,16 +361,35 @@ footer {
 
 .top-nav {
     position: absolute;
-    right: 50px;
-    top: -80px;
+    right: 20px;
+    top: -20px;
     padding: 3px;
     outline: 1px solid var(--shadow-botao-whats);
     border-radius: 50%;
     font-size: 2rem;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     color: #ccc;
     text-decoration: none;
     /* transform: translateY(-80px); */
+    animation: slide-top 1s ease-out 0.4s infinite  normal forwards;
 }
+.top-nav:hover{
+    content: "Voltar ao topo";
+
+}
+
+
+
+
+
+
+@keyframes slide-top {
+    0%{
+      transform: translateY(0);
+    }
+    100%{
+      transform: translateY(-10px);
+    }
+  }
