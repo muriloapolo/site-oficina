@@ -21,9 +21,6 @@
         padding: 10px 20px;
     }
 
-    .title-hero {
-        font-size: 6em
-    }
 
     .cards-container {
         flex-direction: column;
@@ -71,16 +68,22 @@
 
 @media screen and (max-width: 768px) {
     .lista-servicos-principal {
-        font-size: 2em;
+        font-size: 1.8em;
     }
+
 }
 
 
 
-@media screen and (max-width: 560px) {
-    .hero-principal {
-        padding: 0 20px;
-    }
+@media screen and (max-width: 450px) {
+
+     .title-hero{
+     
+        font-size: 13vw;
+    } 
+    .sub-hero{        
+      font-size: 5vw;
+    } 
 
     #servicos,
     #localizacao {
@@ -88,7 +91,7 @@
     }
 
     .sub-title {
-        font-size: 3.5em;
+        font-size: 10vw;
     }
 
     .lista-servicos {
@@ -108,7 +111,12 @@
     .container {
         min-width: 100%;
     }
-  
+    .title-hero{     
+        font-size: 12vw;
+    } 
+    .sub-hero{        
+        font-size: 6vw;
+      } 
     .top-info-fixo {
         font-size: 1.2em;
     }
@@ -118,9 +126,6 @@
   }
 
 
-    .title-hero {
-        font-size: 5.5em;
-    }
 
 
     #section {
